@@ -1,6 +1,8 @@
 open cmd in the project directory
 
-first run ==> docker compose up -d
+first run for postgres docker ==> docker compose up -d
+
+then run for .jar file ==> mvn clean package -DskipTests
 
 then run ==> docker build --tag=docker-file:latest .
 
