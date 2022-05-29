@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "addfa2dc-4bc2-4584-9f08-3a52d1699290",
+		"name": "Mini Project One",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16506691"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@admin.com\",\r\n    \"password\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/uaa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"uaa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE2NTM3ODMxNTQsImV4cCI6MTY1Mzc4NDIzNH0.2Z2ibIm65IJMUlxRftH81dJfIDtrTN6ySUWB81yQTigdQz7rgOA37sDM5XOxDn24owxVBbzDp1P9b2oYnBSgUQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"job"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
